@@ -1,42 +1,44 @@
+/* Default Settings */
 * {
-    margin: 0;
-    padding: 0;
+    margin:      0;
+    padding:     0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
+    box-sizing:  border-box;
 }
 
 body {
-    display: flex;
+    display:         flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    gap: 15px;
+    align-items:     center;
+    min-height:      100vh;
+    flex-direction:  column;
+    gap:             15px;
 }
 
+/* Variables for the button colors*/
+:root {
+    --button-color: hsl(210, 100%, 40%);
+    --hover-color:  hsl(210, 100%, 50%);
+    --text-color:   white;
+}
+
+/* Button and Button Text Styling*/
 button {
-    padding: 20px;
+    padding:          20px;
     background-color: hsl(210, 100%, 40%);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    transition: all 0.5s ease;
-}
-
-.scary-button.scary {
-    background-color: hsl(0, 90%, 55%);
-}
-
-.scary-button.scary > h1 {
-    font-size: clamp(25px, 5vw, 100px);
+    border:           none;
+    border-radius:    25px;
+    color:            white;
+    transition:       all 0.5s ease;
 }
 
 button > h1 {
     font-size: clamp(25px, 5vw, 100px);
 }
 
+/* Button hover animation styling*/
 button:hover {
-    padding: calc(20px + 2vh);
+    padding:          calc(20px + 2vh);
     background-color: hsl(210, 100%, 50%);
 }
 
