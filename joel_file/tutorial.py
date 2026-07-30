@@ -11,3 +11,4 @@
 
 # Hey, don't forget to save your changes!! Please, click the weird symbol on the sidebar and click commit and push (if you're in the editor). Also please leave a message in the title.
 # Happy coding. Tip: Try adding a button by typing this <button> Heyo </button>. If you do it, I will add some CSS for the style!
+print("Hello world")
